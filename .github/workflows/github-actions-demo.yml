@@ -8,7 +8,7 @@ on:
     
   pull_request:
 
-    
+
   workflow_dispatch:
 
 
@@ -24,4 +24,6 @@ jobs:
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - name: Check python version
         run: python3 --version
+      - name: Run main.py
+        run: python main.py
       - run: echo "🍏 This job's status is ${{ job.status }}."
