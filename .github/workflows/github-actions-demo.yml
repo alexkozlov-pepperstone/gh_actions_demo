@@ -6,16 +6,11 @@ on:
     branches:
       - dev
     
+  pull_request:
+
+    
   workflow_dispatch:
-    inputs:
-      environment:
-        type: choice
-        options:
-          - dev
-          - main
-        description: Branches to deploy to (dev, main)
-        default: dev
-        required: true
+
 
 jobs:
   Explore-GitHub-Actions:
