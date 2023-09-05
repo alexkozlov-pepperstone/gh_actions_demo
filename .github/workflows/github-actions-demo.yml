@@ -17,5 +17,5 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-          echo "My variables are $MAY_VAR and $ANOTHER_VAR"
+          echo "My variables are $MY_VAR and $ANOTHER_VAR"
       - run: echo "🍏 This job's status is ${{ job.status }}."
