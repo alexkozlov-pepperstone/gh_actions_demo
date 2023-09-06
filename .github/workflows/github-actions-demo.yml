@@ -29,5 +29,6 @@ jobs:
       - name: Check python version
         run: python3 --version
       - name: Run main.py
+        if: ${{(github.event.inputs.environment == github.ref && github.event_name == 'workflow_dispatch')}}
         run: python main.py
       - run: echo "🍏 This job's status is ${{ job.status }}."
